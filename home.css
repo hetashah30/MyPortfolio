@@ -1,0 +1,650 @@
+/* Importing the Sora font from Google Fonts with weights from 100 to 800 */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* Universal selector to remove default margin and padding from all HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting the default font for the body (and by inheritance, the whole document) to Sora */
+body {
+    font-family: 'Sora', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* navbar css start */
+
+/* Logo container */
+.logo {
+    width: 20px;
+    /* Set the width of the logo container */
+    height: auto;
+    /* Auto adjust the height */
+}
+
+/* Logo image */
+.logo img {
+    margin-top: 20px;
+    margin-bottom: 0%;
+    margin-left: 70px;
+    /* Add left margin to the logo image */
+    width: 200px;
+    /* Set the width of the logo image */
+    height: auto;
+    /* Auto adjust the height of the logo image */
+    border-radius: 50%;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Distribute items evenly in the container */
+    align-items: center;
+    /* Center items vertically */
+    padding: 10px 20px;
+    /* Add padding on all sides */
+    background-color: #fff;
+    /* Set the background color to white */
+    color: black;
+    /* Set the text color to black */
+}
+
+/* Navigation links list */
+.nav-links {
+    list-style: none;
+    /* Remove the default list style */
+    margin: 0;
+    /* Remove the default margin */
+    padding: 0;
+    /* Remove the default padding */
+}
+
+/* Navigation link items */
+.nav-links li {
+    display: inline-block;
+    /* Display the list items inline */
+    margin-right: 20px;
+    /* Add right margin to each list item */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Navigation link */
+.nav-links li a {
+    color: black;
+    /* Set the text color to black */
+    text-decoration: none;
+    /* Remove the default text decoration */
+}
+.nav-links li a:hover {
+    color: #ff4500;
+    /* Change the text color on hover */
+}
+
+/* navbar css ends  */
+
+/* Start of hero section styles */
+.hero-section {
+    
+    width: 98%;
+    /* Full width */
+    margin-left: 10px;
+    /* Center the element horizontally */
+    margin-right: 0%;
+    /* Center the element horizontally */
+    
+}
+
+/* Styles for the text part of the hero section */
+.hero-text {
+    flex: 60;
+    /* Take up 60% of the flex container */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack the children vertically */
+    justify-content: center;
+    /* Center the children vertically */
+    align-items: flex-start;
+    /* Align the children to the start of the flex container */
+}
+/* Styles for the introduction text */
+.intro {
+    font-size: 3rem;
+    /* Make the text larger */
+    padding: 0.5rem;
+    /* Add some space around the text */
+}
+
+/* Styles for the user name, profession, and location */
+.user-name,
+.profession,
+.india {
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Styles for the developer text */
+.developer {
+    color: white;
+    /* Make the text white */
+    text-shadow: 3px 3px 2px #000,
+        /* Add a shadow to the text */
+        -3px 3px 2px #000,
+        -3px -3px 2px #000,
+        3px -3px 2px #000;
+}
+
+/* Styles for the bio text */
+.bio {
+    font-weight: 250;
+    /* Make the text lighter */
+    margin-left: 12px;
+    /* Add some space to the left */
+    font-size: 16px;
+    /* Set the font size */
+    margin-bottom: 2px;
+    /* Add some space at the bottom */
+}
+
+/* Styles for the social links container */
+.socials {
+    display: flex;
+    /* Use flexbox for layout */
+    margin-top: 9px;
+    /* Add some space at the top */
+    margin-left: 12px;
+    /* Add some space to the left */
+}
+
+/* Styles for the individual social links */
+.link {
+    display: inline-flex;
+    /* Use flexbox for layout and keep the element inline */
+    align-items: center;
+    /* Center the children vertically */
+    justify-content: center;
+    /* Center the children horizontally */
+    width: 50px;
+    /* Set a fixed width */
+    height: 50px;
+    /* Set a fixed height */
+    border: 2px solid black;
+    /* Add a border */
+    background-color: white;
+    /* Set the background color */
+    margin-right: 10px;
+    /* Add some space to the right */
+    border-radius: 8px;
+    /* Round the corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Animate the background color and color changes */
+    text-decoration: none;
+    /* Remove the underline */
+}
+
+/* Styles for the social links on hover */
+.link:hover {
+    background-color: black;
+    /* Change the background color */
+}
+
+/* Styles for the social icons on hover */
+.link:hover .fab {
+    color: white;
+    /* Change the color */
+}
+
+/* Styles for the social icons */
+.fab {
+    color: black;
+    /* Set the color */
+}
+
+/* End of hero section styles */
+
+/* skills css starts  */
+
+/* Main container for skills section */
+.skills {
+    width: 100%;
+    /* Full width */
+    margin-left: auto;
+    /* Center the element horizontally */
+    margin-right: auto;
+    /* Center the element horizontally */
+    background-color: black;
+    /* Background color */
+    color: white;
+    /* Text color */
+    margin-top: 10px;
+    /* Top margin */
+}
+
+/* Header for the skills section */
+.skills-header {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: center;
+    /* Center items vertically */
+    padding-bottom: 1rem;
+    /* Padding at the bottom */
+}
+
+/* Title for the skills section */
+.skills-title {
+    text-align: center;
+    /* Center the text */
+    margin-top: 15px;
+    /* Top margin */
+}
+
+/* General title styling */
+.title {
+    font-size: 4rem;
+    /* Font size */
+}
+
+/* Bold title styling */
+.bold {
+    font-weight: bold;
+    /* Make the font bold */
+}
+
+/* Container for individual skill items */
+
+.skills-details {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow the items to wrap to a new line */
+    justify-content: center;
+}
+
+.skills-container{
+    background-color: white;
+    color: black;
+    margin: 2.5rem;
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 40px;
+}
+/* Individual skill item */
+.skill-item {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack the items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: center;
+    /* Center items vertically */
+    padding: 1.0rem;
+    /* Padding inside the item */
+    margin: 1.0rem;
+    /* Margin around the item */
+    width: 75px;
+    /* Width of the item */
+    height: 74px;
+    background-color: white;
+    /* Background color */
+    color: black;
+    /* Text color */
+}
+
+/* Name of the skill */
+.skill-name {
+    font-weight: bold;
+    /* Make the font bold */
+    font-size: 1.5rem;
+}
+
+/* skills css ends  */
+
+/* about css starts  */
+
+/* Styling for the about section container */
+.about {
+    width: 100%;
+    /* Full width */
+    max-width: 90%;
+    /* Maximum width */
+    margin-left: auto;
+    /* Centering: left margin auto */
+    margin-right: auto;
+    /* Centering: right margin auto */
+    display: flex;
+    /* Using flexbox for layout */
+    margin-top: 50px;
+    /* Top margin */
+    background-color: white;
+    /* Background color */
+}
+
+
+
+/* Styling for the about title */
+.abt-title {
+    font-size: 3rem;
+    /* Font size */
+    text-align: center;
+    /* Center aligned text */
+}
+
+/* Styling for the about bio text */
+.about-bio {
+    font-size: 1rem;
+    /* Font size */
+    padding: 20px;
+    /* Padding around text */
+    margin: 10px;
+    /* Margin around text */
+    font-weight: 250;
+    /* Font weight */
+}
+
+/* Styling for the about text container */
+
+
+/* Styling for the 'me' class */
+.me {
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* about css ends  */
+
+/* Start of projects section styling */
+.projects-section {
+    background-color: black;
+    /* Set the background color of the projects section to black */
+    color: white;
+    /* Set the text color of the projects section to white */
+}
+
+/* Styling for the container of all projects */
+.my-projects {
+    width: 100%;
+    /* Set the width to occupy the full width of its parent */
+    max-width: 90%;
+    /* Limit the maximum width to 90% of its parent */
+    margin-left: auto;
+    /* Center the element horizontally */
+    margin-right: auto;
+    /* Center the element horizontally */
+    margin-top: 10px;
+    /* Add some space at the top */
+}
+
+/* Styling for the project header */
+.project-head {
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    padding-bottom: 1rem;
+    /* Add some space at the bottom */
+}
+
+/* Styling for the project title */
+.project-title {
+    font-size: 3rem;
+    /* Set the font size */
+    margin-top: 15px;
+    /* Add some space at the top */
+}
+
+/* Styling for the bold text in the project title */
+.project-bold {
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Styling for the individual projects */
+.project-1,
+.project-2,
+.project-3 {
+    display: flex;
+    /* Use flexbox for layout */
+}
+
+/* Styling for the project name */
+.project-name {
+    font-size: 2rem;
+    /* Set the font size */
+    margin-top: 20px;
+    /* Add some space at the top */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Styling for the image in the second project */
+.project-11img img {
+    margin-left: 10px;
+    /* Add some space to the left of the image */
+    width: 430px;
+    height: 250px;
+}
+.project-1img img {
+    margin-left: 10px;
+    /* Add some space to the left of the image */
+    width: 450px;
+    height: 250px;
+}
+.project-3img img {
+    margin: 10px;
+    margin-top: 25px;
+    /* Add some space to the left of the image */
+    width: 430px;
+    height: 200px;
+}
+.project-2img img {
+    margin-left: 10px;
+    /* Add some space to the left of the image */
+    width: 600px;
+    height: 200px;
+}
+.project-9img img {
+    margin-left: 10px;
+    /* Add some space to the left of the image */
+    width: 480px;
+    height: 200px;
+    margin-top: 33px;
+}
+.project-7img img {
+    margin-left: 10px;
+    /* Add some space to the left of the image */
+    width: 400px;
+    height: 200px;
+}
+/* Styling for the project details */
+.project-details {
+    padding: 10px;
+    /* Add some padding around the text */
+    margin: auto;
+    /* Center the element */
+}
+
+/* Styling for the redirect link */
+.redirect-link {
+    margin-top: 10px;
+    /* Add some space at the top */
+}
+
+/* End of projects section styling */
+
+/* Style for the contact section */
+.contact {
+    display: flex;
+    /* Use flexbox for layout */
+    width: 100%;
+    /* Full width */
+    max-width: 90%;
+    /* Maximum width */
+    margin-left: auto;
+    /* Center the element horizontally */
+    margin-right: auto;
+    /* Center the element horizontally */
+    margin-top: 20px;
+    /* Top margin */
+}
+
+/* Style for the main form */
+.main-form {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack the children vertically */
+    padding: 20px;
+    /* Padding around the form */
+}
+
+/* Style for the input fields */
+.input-style {
+    margin-bottom: 10px;
+    /* Bottom margin */
+    width: 500px;
+    /* Set a specific width */
+    border: 2px solid #000;
+    /* Border around the input */
+    height: 20px;
+    /* Set a specific height */
+    padding: 10px;
+    /* Padding inside the input */
+    border-radius: 4px;
+    /* Rounded corners */
+}
+
+/* Style for the textarea inside the main form */
+.main-form textarea {
+    height: 100px;
+    /* Set a specific height */
+}
+
+/* Style for the info section */
+.info {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack the children vertically */
+}
+
+/* Style for the info header */
+.info-head {
+    font-size: 3rem;
+    /* Large font size */
+    padding: 0.5rem;
+    /* Padding around the text */
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* Style for the something class */
+.something {
+    display: block;
+    /* Display as block */
+}
+
+/* Style for the info details */
+.info-details {
+    font-weight: 250;
+    /* Lighter font weight */
+    margin-left: 10px;
+    /* Left margin */
+}
+
+/* Style for the info footer */
+.info-footer {
+    font-size: 2rem;
+    /* Large font size */
+    padding: 5px;
+    /* Padding around the text */
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* Style for the button */
+.btn {
+    display: flex;
+    /* Use flexbox for layout */
+}
+
+/* Style for the talk class */
+.talk {
+    color: white;
+    /* White text */
+    text-shadow: 3px 3px 2px #000,
+        /* Text shadow for 3D effect */
+        -3px 3px 2px #000,
+        -3px -3px 2px #000,
+        3px -3px 2px #000;
+    padding: auto;
+    /* Automatic padding */
+    margin-right: 4px;
+    /* Right margin */
+}
+
+/* Style for the touch class */
+.touch {
+    background-color: black;
+    /* Black background */
+    font-weight: bold;
+    /* Bold text */
+    width: 150px;
+    /* Set a specific width */
+    padding: 10px 10px;
+    /* Padding inside the button */
+    border: none;
+    /* No border */
+    color: #fff;
+    /* White text */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor changes to pointer on hover */
+    height: 55px;
+    /* Set a specific height */
+    margin-top: 8px;
+    /* Top margin */
+}
+
+
+/* Styling for the footer section */
+.footer {
+    background-color: #000;
+    /* Set the background color to black */
+    color: white;
+    /* Set the text color to white */
+    width: 100%;
+    /* Set the width to cover the full width of the page */
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+}
+
+/* Styling for the text inside the footer */
+.footer-text {
+    margin-right: 10px;
+    /* Add a right margin */
+    text-align: center;
+    /* Center the text */
+    height: 50px;
+    /* Set a specific height */
+    margin-top: 20px;
+    /* Add a top margin */
+}
