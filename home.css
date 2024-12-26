@@ -212,67 +212,50 @@ nav {
 
 /* End of hero section styles */
 
-/* skills css starts  */
+/* Skills CSS starts */
 
 /* Main container for skills section */
 .skills {
     width: 100%;
-    /* Full width */
     margin-left: auto;
-    /* Center the element horizontally */
     margin-right: auto;
-    /* Center the element horizontally */
     background-color: black;
-    /* Background color */
     color: white;
-    /* Text color */
     margin-top: 10px;
-    /* Top margin */
 }
 
 /* Header for the skills section */
 .skills-header {
     display: flex;
-    /* Use flexbox for layout */
     justify-content: center;
-    /* Center items horizontally */
     align-items: center;
-    /* Center items vertically */
     padding-bottom: 1rem;
-    /* Padding at the bottom */
 }
 
 /* Title for the skills section */
 .skills-title {
     text-align: center;
-    /* Center the text */
     margin-top: 15px;
-    /* Top margin */
 }
 
 /* General title styling */
 .title {
     font-size: 4rem;
-    /* Font size */
 }
 
 /* Bold title styling */
 .bold {
     font-weight: bold;
-    /* Make the font bold */
 }
 
 /* Container for individual skill items */
-
 .skills-details {
     display: flex;
-    /* Use flexbox for layout */
     flex-wrap: wrap;
-    /* Allow the items to wrap to a new line */
     justify-content: center;
 }
 
-.skills-container{
+.skills-container {
     background-color: white;
     color: black;
     margin: 2.5rem;
@@ -283,37 +266,35 @@ nav {
     flex-wrap: wrap;
     border-radius: 40px;
 }
+
 /* Individual skill item */
 .skill-item {
     display: flex;
-    /* Use flexbox for layout */
     flex-direction: column;
-    /* Stack the items vertically */
     align-items: center;
-    /* Center items horizontally */
     justify-content: center;
-    /* Center items vertically */
     padding: 1.0rem;
-    /* Padding inside the item */
     margin: 1.0rem;
-    /* Margin around the item */
     width: 75px;
-    /* Width of the item */
     height: 74px;
     background-color: white;
-    /* Background color */
     color: black;
-    /* Text color */
+}
+
+/* Logo for the skill */
+.skill-logo img {
+    width: 50px;
+    height: 50px;
 }
 
 /* Name of the skill */
 .skill-name {
     font-weight: bold;
-    /* Make the font bold */
     font-size: 1.5rem;
+    margin-top: 0.5rem;
 }
 
-/* skills css ends  */
+/* Skills CSS ends */
 
 /* about css starts  */
 
