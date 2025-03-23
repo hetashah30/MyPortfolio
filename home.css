@@ -10,6 +10,7 @@
 /* Setting the default font for the body (and by inheritance, the whole document) to Sora */
 body {
     font-family: 'Sora', sans-serif;
+    font-size: large;
 }
 
 html {
