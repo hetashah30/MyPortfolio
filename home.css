@@ -1,10 +1,6 @@
 /* Importing the Sora font from Google Fonts with weights from 100 to 800 */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-html{
 
-    scroll-behavior: smooth;
-
-}
 /* Universal selector to remove default margin and padding from all HTML elements */
 * {
     margin: 0;
@@ -212,6 +208,7 @@ nav {
 
 /* End of hero section styles */
 
+
 /* Skills CSS starts */
 
 /* Main container for skills section */
@@ -295,6 +292,8 @@ nav {
 }
 
 /* Skills CSS ends */
+
+
 
 /* about css starts  */
 
@@ -633,3 +632,129 @@ nav {
     margin-top: 20px;
     /* Add a top margin */
 }
+
+
+/* Responsive Design Enhancements */
+
+/* Ensuring proper scaling on small screens */
+@media (max-width: 1024px) {
+    .logo img {
+        margin-left: 20px;
+        width: 150px;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links for smaller screens */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .intro {
+        font-size: 2.5rem;
+    }
+
+    .bio {
+        font-size: 14px;
+    }
+
+    .skills-container {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .skill-item {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 120px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .intro {
+        font-size: 2rem;
+    }
+
+    .bio {
+        font-size: 12px;
+    }
+
+    .skills-container {
+        padding: 1rem;
+    }
+
+    .skill-item {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 100px;
+        margin-left: 10px;
+    }
+
+    .nav-links {
+        top: 50px;
+    }
+
+    .hero-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .intro {
+        font-size: 1.8rem;
+    }
+
+    .bio {
+        font-size: 10px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 45px;
+        height: 45px;
+    }
+}
+
