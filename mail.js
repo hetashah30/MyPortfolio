@@ -30,7 +30,7 @@ function submitForm(e) {
     // Hide alert after 3 seconds
     setTimeout(() => {
         document.querySelector(".alert").style.display = "none";
-    }, 3000);
+    }, 2000);
 
     // Reset form
     document.getElementById("contactForm").reset();
