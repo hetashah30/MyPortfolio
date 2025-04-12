@@ -228,7 +228,7 @@
             <!-- about image container -->
             <div class="about-img">
                 <!-- image for about section -->
-                <img src="./images/about.png" alt="">
+                <img src="./images/about-girl.png" alt="">
             </div>
             <!-- about text container -->
             <div class="about-text">
@@ -509,8 +509,10 @@
         <div class="contact">
             <!-- Contact form div -->
             <div class="contact-form">
+
                 <!-- Main form div -->
-                <form class="main-form">
+                <form id="contactForm" class="main-form">
+                    
                     <!-- Input field for name -->
                     <input type="text" id="user_name" placeholder="Your name" class="input-style">
                     <!-- Input field for email -->
@@ -519,6 +521,7 @@
                     <input type="url" id="user_website_url" placeholder="Your website (If exists)" class="input-style">
                     <!-- Textarea for user message -->
                     <textarea id="user_message" placeholder="How can I help?*" class="input-style"></textarea>
+                    <div class="alert">Message sent successfully</div>
                     <!-- Button div -->
                     <div class="btn">
                         <!-- Contact button -->
@@ -547,7 +550,8 @@
                         </div>
                     </div>
                 </form>
-                <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=gohuf2fg&n=n1.ratufa.io"></script>
+
+                
             </div>
             <!-- Info div -->
             <div class="info">
@@ -564,15 +568,15 @@
                     <a href="mailto:hetashah3012@gmail.com" style="color: black;">@hetashah3012@gmail.com</a>
                 </div>
                 <!-- Info footer with phone number -->
-<!--                 <div class="info-footer">
+                <!-- <div class="info-footer">
                     <a href="tel:" style="color: black;">Contact me</a>
 
                 </div> -->
             </div>
         </div>
     </section>
-<!-- Generate your own script from https://www.ratufa.io/-->
-    <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=yctr0uk2&n=n1.ratufa.io"></script>
+<!-- Generate your own script from https://www.ratufa.io/
+    <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=yctr0uk2&n=n1.ratufa.io"></script> -->
     <!-- contact me section ends here  -->
 
     <!-- footer section starts  -->
@@ -584,6 +588,11 @@
         </div>
     </footer>
     <!-- footer section ends  -->
+
+
+    <!-- JavaScript file for the website -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./mail.js"></script>
 
 </body>
 
