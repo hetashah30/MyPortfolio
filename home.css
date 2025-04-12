@@ -581,6 +581,18 @@ nav {
     /* Right margin */
 }
 
+/* Style for the submit button */
+.alert{
+    width: 485px;
+    background: rgb(0, 255, 106);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 800;
+    display: none;
+}
+
 /* Style for the touch class */
 .touch {
     background-color: black;
