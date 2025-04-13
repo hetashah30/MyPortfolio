@@ -22,6 +22,12 @@ function submitForm(e) {
     var url = getElementVal("user_website_url");
     var msgContent = getElementVal("user_message");
 
+    // Basic validation: check if any field is empty
+    if (name === "" || emailid === "" || msgContent === "") {
+        alert("Please fill out all required fields!!");
+        return; // Stop further execution
+    }
+    
     saveMessages(name, emailid, url, msgContent);
   
     // Show alert
