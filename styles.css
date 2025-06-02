@@ -157,6 +157,21 @@ body.dark-mode {
     margin: 0 20px;
 }
 
+.resume-btn button {
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  padding: 3px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn button:hover {
+  background-color: #21b300;
+}
+
 .nav-item {
     color: var(--light-text);
     text-decoration: none;
