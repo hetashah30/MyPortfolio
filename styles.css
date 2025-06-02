@@ -157,6 +157,16 @@ body.dark-mode {
     margin: 0 20px;
 }
 
+.nav-item {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    padding: 5px 0;
+    transition: var(--transition);
+}
+
 .resume-btn button {
   background-color: #ff6f00;
   color: white;
@@ -170,16 +180,6 @@ body.dark-mode {
 
 .resume-btn button:hover {
   background-color: #21b300;
-}
-
-.nav-item {
-    color: var(--light-text);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    position: relative;
-    padding: 5px 0;
-    transition: var(--transition);
 }
 
 .dark-mode .nav-item {
