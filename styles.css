@@ -165,17 +165,20 @@ body.dark-mode {
     position: relative;
     padding: 5px 0;
     transition: var(--transition);
+    display: inline-block;
 }
 
 .resume-btn button {
-  background-color: #ff6f00;
-  color: white;
-  border: none;
-  padding: 3px 15px;
-  font-size: 13px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 6px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
 }
 
 .resume-btn button:hover {
