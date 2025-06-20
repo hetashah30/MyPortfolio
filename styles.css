@@ -172,8 +172,8 @@ body.dark-mode {
     background-color: #ff6f00;
     color: white;
     border: none;
-    padding: 6px 20px;
-    font-size: 15px;
+    padding: 5px 15px;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
@@ -954,6 +954,11 @@ footer {
     }
 
     .nav-item {
+        font-size: 1.5rem;
+    }
+
+    .resume-btn button {
+        padding: 7px 10px;
         font-size: 1.5rem;
     }
 
