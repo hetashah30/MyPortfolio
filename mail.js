@@ -14,34 +14,47 @@ firebase.initializeApp(firebaseConfig);
 var MyPortfolioDB = firebase.database().ref('MyPortfolio');
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
-function submitForm(e) {
+async function submitForm(e) {
     e.preventDefault();
-  
-    var name = getElementVal("user_name");
-    var emailid = getElementVal("user_email");
-    var url = getElementVal("user_website_url");
-    var msgContent = getElementVal("user_message");
 
-    // Basic validation: check if any field is empty
+    var name = getElementVal("user_name").trim();
+    var emailid = getElementVal("user_email").trim();
+    var url = getElementVal("user_website_url").trim();
+    var msgContent = getElementVal("user_message").trim();
+
+    // Validate required fields
     if (name === "" || emailid === "" || msgContent === "") {
-        alert("Please fill out all required fields!!");
-        return; // Stop further execution
+        alert("Please fill out all required fields!");
+        return;
     }
-    
-    saveMessages(name, emailid, url, msgContent);
-  
-    // Show alert
-    document.querySelector(".alert").style.display = "block";
 
-    // Hide alert after 3 seconds
-    setTimeout(() => {
-        document.querySelector(".alert").style.display = "none";
-    }, 2000);
+    // Basic email validation
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailid)) {
+        alert("Please enter a valid email address!");
+        return;
+    }
 
-    // Reset form
-    document.getElementById("contactForm").reset();
+    try {
+        // Save message to Firebase
+        await saveMessages(name, emailid, url, msgContent);
+
+        // Show success alert
+        document.querySelector(".alert").style.display = "block";
+
+        // Hide alert after 2 seconds
+        setTimeout(() => {
+            document.querySelector(".alert").style.display = "none";
+        }, 2000);
+
+        // Reset form after successful submission
+        document.getElementById("contactForm").reset();
+
+    } catch (error) {
+        console.error("Error submitting contact form:", error);
+        alert("Unable to send your message. Please try again.");
+    }
 }
-
     // Save messages to Firebase
 const saveMessages = async (name, emailid, url, msgContent) => {
     try {
