@@ -43,14 +43,26 @@ function submitForm(e) {
 }
 
     // Save messages to Firebase
-const saveMessages = (name, emailid, url, msgContent) => {
-    var newContactForm = MyPortfolioDB.push();
-    newContactForm.set({
-        name: name,
-        emailid: emailid,
-        url: url,
-        msgContent: msgContent,
-    });
+const saveMessages = async (name, emailid, url, msgContent) => {
+    try {
+        await MyPortfolioDB.push({
+            name: name,
+            emailid: emailid,
+            url: url,
+            msgContent: msgContent
+        });
+
+        document.querySelector(".alert").style.display = "block";
+
+        setTimeout(() => {
+            document.querySelector(".alert").style.display = "none";
+        }, 2000);
+
+        document.getElementById("contactForm").reset();
+    } catch (error) {
+        console.error("Error saving contact message:", error);
+        alert("Unable to send your message. Please try again.");
+    }
 };
 
 const getElementVal = (id) => {
